@@ -1,1 +1,1 @@
-このページ作ってるの、実は7歳の俺wwwwwwwwwww
+top.htmlがトップページ
