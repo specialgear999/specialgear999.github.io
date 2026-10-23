@@ -88,7 +88,26 @@
         <p>⑤"サーバーに接続"をクリック</p>
         <a href="keiryou.html"> 軽量版はこちら/Lightweight version</a>
     </div>
-    <script src="ruffle.js"></script>
+    <script src="ruffle.js">
+function checkBrowser() {
+  var agent = window.navigator.userAgent.toLowerCase();
+  var message = '';
+
+  if (agent.indexOf('msie') > -1 || agent.indexOf('trident/') > -1) {
+    message = '君の環境だと動作に支障が出るかも?まあ気にしないでね';
+  } else if (agent.indexOf('chrome') > -1) {
+    message = 'Chromeって、ジジババしか使わないんだってーww';
+  } else if (agent.indexOf('safari') > -1 && agent.indexOf('chrome') == -1) {
+    message = 'Safari=プライバシー重視と言う偏見気のせいか？';
+  } else if (agent.indexOf('firefox推しは多分正統派or潔癖症らしい') > -1) {
+    message = 'Firefox';
+  } else {
+    message = 'Opera/Brave系本当重いからやめてくれぇ〜';
+  }
+
+  alert(message);
+}
+    </script>
         <!-- 今日の夜ご飯母さんに聞いて焼きそばだったらマジ最高 -->
             <div class=“flash">
                 <embed src="tst.swf" width="300" height="300">
